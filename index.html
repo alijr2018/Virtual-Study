@@ -1,48 +1,37 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
-    <form action="upload.php" method="post" enctype="multipart/form-data">
-	    <input type="file" name="fileToUpload" id="fileToUpload">
-	    <input type="submit" value="Upload File" name="submit">
-    </form>
+    <title>File Upload</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("#fileForm").submit(function(e) {
+                e.preventDefault();
+                var formData = new FormData(this);
 
-    <title>Virtual Study</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-
-        header {
-            background-color: #0074b8;
-            color: #fff;
-            text-align: center;
-            padding: 10px;
-        }
-
-        h1 {
-            font-size: 24px;
-        }
-
-        #content {
-            margin: 20px;
-        }
-    </style>
+                $.ajax({
+                    url: "upload.php",
+                    type: "POST",
+                    data: formData,
+                    contentType: false,
+                    processData: false,
+                    success: function(response) {
+                        // Handle the response from the server here
+                        alert(response); // You can replace this with your own logic
+                    },
+                    error: function(xhr, status, error) {
+                        // Handle errors here
+                        console.error(error);
+                    }
+                });
+            });
+        });
+    </script>
 </head>
 <body>
-    <header>
-        <h1>Virtual Study</h1>
-    </header>
-
-    <div id="content">
-	    <h2><center>Welcome to the Virtual Study</center></h2>
-        <p>Here you will find almost all pdf and ressources for help yourself.</p>
-
-    </div>
-
-
+    <form id="fileForm" enctype="multipart/form-data">
+        <input type="file" name="fileToUpload" id="fileToUpload">
+        <input type="button" value="Upload File" id="uploadButton">
+    </form>
 </body>
 </html>
