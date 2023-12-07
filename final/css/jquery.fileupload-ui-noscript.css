@@ -1,0 +1,10 @@
+@charset "UTF-8";
+/*
+ * https://github.com/alijr2018/Virtual-Study
+ */
+
+.fileinput-button i,
+.fileupload-buttonbar .delete,
+.fileupload-buttonbar .toggle {
+  display: none;
+}
