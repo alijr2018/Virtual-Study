@@ -42,8 +42,6 @@ class UploadHandler
     const IMAGETYPE_GIF = 'image/gif';
     const IMAGETYPE_JPEG = 'image/jpeg';
     const IMAGETYPE_PNG = 'image/png';
-    const IMAGETYPE_PDF = 'image/pdf';
-    const IMAGETYPE_TXT = 'image/txt';
 
     protected $image_objects = array();
     protected $response = array();
@@ -540,7 +538,7 @@ class UploadHandler
         $index, $content_range) {
         // Add missing file extension for known image types:
         if (strpos($name, '.') === false &&
-            preg_match('/^image\/(gif|jpe?g|png)/', $type, $matches)) {
+            preg_match('/^image\/(gif|jpe?g|png|img|pdf)|video\/(mp4|avi|mov|wmv|flv|webm|mkv)/', $type, $matches)) {
             $name .= '.'.$matches[1];
         }
         if ($this->options['correct_image_extensions']) {
