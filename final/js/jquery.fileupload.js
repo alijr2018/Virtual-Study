@@ -1,5 +1,12 @@
 /*
- * https://github.com/alijr2018/Virtual-Study
+ * jQuery File Upload Plugin
+ * https://github.com/blueimp/jQuery-File-Upload
+ *
+ * Copyright 2010, Sebastian Tschan
+ * https://blueimp.net
+ *
+ * Licensed under the MIT license:
+ * https://opensource.org/licenses/MIT
  */
 
 /* global define, require */
@@ -298,7 +305,7 @@
     // used, as promise.then in older versions has a different behavior, see:
     // https://blog.jquery.com/2012/08/09/jquery-1-8-released/
     // https://bugs.jquery.com/ticket/11010
-    // https://github.com/alijr2018/Virtual-Study/pull/3435
+    // https://github.com/blueimp/jQuery-File-Upload/pull/3435
     _promisePipe: (function () {
       var parts = $.fn.jquery.split('.');
       return Number(parts[0]) > 1 || Number(parts[1]) > 7 ? 'then' : 'pipe';

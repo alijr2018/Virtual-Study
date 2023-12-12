@@ -1,5 +1,12 @@
 /*
- * https://github.com/alijr2018/Virtual-Study
+ * jQuery Iframe Transport Plugin
+ * https://github.com/blueimp/jQuery-File-Upload
+ *
+ * Copyright 2011, Sebastian Tschan
+ * https://blueimp.net
+ *
+ * Licensed under the MIT license:
+ * https://opensource.org/licenses/MIT
  */
 
 /* global define, require */
@@ -150,7 +157,7 @@
               // Submitting the form in a setTimeout call fixes an issue with
               // Safari 13 not triggering the iframe load event after resetting
               // the load event handler, see also:
-              // https://github.com/alijr2018/Virtual-Study/issues/3633
+              // https://github.com/blueimp/jQuery-File-Upload/issues/3633
               form.submit();
               // Insert the file input fields at their original location
               // by replacing the clones with the originals:
@@ -191,7 +198,7 @@
   // The Content-Type for XML responses on the other hand has to be always
   // application/xml or text/xml, so IE properly parses the XML response.
   // See also
-  // https://github.com/alijr2018/Virtual-Study/wiki/Setup#content-type-negotiation
+  // https://github.com/blueimp/jQuery-File-Upload/wiki/Setup#content-type-negotiation
   $.ajaxSetup({
     converters: {
       'iframe text': function (iframe) {

@@ -1,6 +1,6 @@
 # If you have not done so already, please first read SECURITY.md in the root
 # directory of this project or online:
-# https://github.com/alijr2018/Virtual-Study/blob/master/SECURITY.md
+# https://github.com/blueimp/jQuery-File-Upload/blob/master/SECURITY.md
 #
 # The settings in this file require Apache to support configuration overrides
 # in .htaccess files, which is disabled by default since Apache v2.3.9 and needs

@@ -1,5 +1,14 @@
 /*
- * https://github.com/alijr2018/Virtual-Study
+ * jQuery File Upload Video Preview Plugin
+ * https://github.com/blueimp/jQuery-File-Upload
+ *
+ * Copyright 2013, Sebastian Tschan
+ * https://blueimp.net
+ *
+ * Licensed under the MIT license:
+ * https://opensource.org/licenses/MIT
+ */
+
 /* global define, require */
 
 (function (factory) {

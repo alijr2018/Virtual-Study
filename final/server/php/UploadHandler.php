@@ -1,7 +1,7 @@
 <?php
 /*
  * jQuery File Upload Plugin PHP Class
- * https://github.com/alijr2018/Virtual-Study
+ * https://github.com/blueimp/jQuery-File-Upload
  *
  * Copyright 2010, Sebastian Tschan
  * https://blueimp.net
@@ -527,10 +527,6 @@ class UploadHandler
                 return  array('png');
             case self::IMAGETYPE_GIF:
                 return array('gif');
-            case self::IMAGETYPE_PDF:
-                return array('pdf');
-            case self::IMAGETYPE_TXT:
-                retrun array('txt');
         }
     }
 
@@ -538,7 +534,7 @@ class UploadHandler
         $index, $content_range) {
         // Add missing file extension for known image types:
         if (strpos($name, '.') === false &&
-            preg_match('/^image\/(gif|jpe?g|png|img|pdf)|video\/(mp4|avi|mov|wmv|flv|webm|mkv)/', $type, $matches)) {
+            preg_match('/^image\/(gif|jpe?g|png)/', $type, $matches)) {
             $name .= '.'.$matches[1];
         }
         if ($this->options['correct_image_extensions']) {
