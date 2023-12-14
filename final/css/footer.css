@@ -1,18 +1,20 @@
 footer {
 	text-align: center;
-	position: relative;
+	position: fixed;
 	bottom: 0;
-	      width: 100%;
-	        background-color: #f0f0f0; /* Adjust as needed */
-		  padding: 20px 0; /* Adjust padding as needed */
+	width: 100%;
+	background-color: #000000;
+	color: #ffffff;
+	padding: 20px 0;
 }
-body {
-	  display: flex;
-	    flex-direction: column;
-	      min-height: 100vh; /* Ensure the body takes at least the height of the viewport */
-	        margin: 0;
-	}
 
-	.content {
-		  flex: 1; /* Allow the content to take up remaining vertical space */
-	  }
+body {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	margin: 0;
+}
+.content {
+	flex: 1;
+}
+

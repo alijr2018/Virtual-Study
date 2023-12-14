@@ -2,7 +2,6 @@
 <html lang="en">
   <head>
 	  <link rel="stylesheet" href="css/footer.css">
-	  <p style="background-image: img/img.jpg;">
     <meta charset="utf-8" />
     <title>Virtual Study</title>
     <meta
@@ -17,6 +16,13 @@
       crossorigin="anonymous"
     />
     <style>
+	body {
+		background: linear-gradient(to right, #ff0000, #0000ff);
+		font-family: Arial, sans-serif;
+		color: #000000; /* Text color */
+		text-align: center;
+		padding: 10px;
+									            }
       #navigation {
         margin: 10px 0;
       }
@@ -40,7 +46,7 @@
       ><link rel="stylesheet" href="css/jquery.fileupload-ui-noscript.css"
     /></noscript>
   </head>
-  <body background = "img/q101.jpeg">
+  <body>
     <div class="container">
       <ul class="nav nav-tabs" id="navigation">
         <li>
@@ -56,7 +62,7 @@
 		<a href="/login/login.php">Log-in</a>
 
       </ul>
-      <h1 id="title">File Upload section</h1>
+      <h1 id="title" style="color: grey;">File Upload section</h1>
       <blockquote id="description">
         <p>
           File Upload all pdf and found pdf's to learn and help other's learn.
@@ -119,9 +125,9 @@
       </form>
       <div class="panel panel-default">
         <div class="panel-heading">
-          <h3 class="panel-title">Notes</h3>
+          <h3 id="title" class="panel-title">Notes</h3>
         </div>
-        <div class="panel-body">
+        <div class="panel-body" style="color: black;">
           <ul>
             <li>
               The maximum file size for uploads in this demo is
@@ -308,7 +314,7 @@
     </div>
     <footer>
 	    <p>
-	    			Make it by ALI
+	    Make it by ALI
 	    </p>
     </footer>
   </body>
