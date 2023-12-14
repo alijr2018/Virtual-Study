@@ -26,16 +26,13 @@
           display: none;
         }
       }
+      #title {
+	      text-align: center;
+	      font-family: 
+      }
     </style>
-    <!-- blueimp Gallery styles -->
-    <link
-      rel="stylesheet"
-      href="https://blueimp.github.io/Gallery/css/blueimp-gallery.min.css"
-    />
-    <!-- CSS to style the file input field as button and adjust the Bootstrap progress bars -->
     <link rel="stylesheet" href="css/jquery.fileupload.css" />
     <link rel="stylesheet" href="css/jquery.fileupload-ui.css" />
-    <!-- CSS adjustments for browsers with JavaScript disabled -->
     <noscript
       ><link rel="stylesheet" href="css/jquery.fileupload-noscript.css"
     /></noscript>
@@ -43,14 +40,14 @@
       ><link rel="stylesheet" href="css/jquery.fileupload-ui-noscript.css"
     /></noscript>
   </head>
-  <body>
+  <body background = "img/q101.jpeg">
     <div class="container">
       <ul class="nav nav-tabs" id="navigation">
         <li>
           <a href="https://github.com/alijr2018/Virtual-Study">Project</a>
         </li>
         <li class="active">
-          <a href="#">Demo</a>
+          <a href="#">Upload</a>
         </li>
 	<li class="About">
 		<a href="/about">About</a>
@@ -97,7 +94,6 @@
             <input type="checkbox" class="toggle" />
             <!-- The global file processing state -->
             <span class="fileupload-process"></span>
-          </div>
           <!-- The global progress state -->
           <div class="col-lg-5 fileupload-progress fade">
             <!-- The global progress bar -->
@@ -129,10 +125,10 @@
           <ul>
             <li>
               The maximum file size for uploads in this demo is
-              <strong>999 KB</strong> (default file size is unlimited).
+              <strong>1.9 MB</strong> (default file size is unlimited).
             </li>
             <li>
-              Only image files (<strong>JPG, GIF, PNG</strong>) are allowed in
+              Only image files (<strong>JPG, GIF, PNG, PDF.</strong>) are allowed in
               this demo (by default there is no file type restriction).
             </li>
             <li>
@@ -317,3 +313,4 @@
     </footer>
   </body>
 </html>
+<!DOCTYPE html>
