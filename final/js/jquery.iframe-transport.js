@@ -1,13 +1,3 @@
-/*
- * jQuery Iframe Transport Plugin
- * https://github.com/blueimp/jQuery-File-Upload
- *
- * Copyright 2011, Sebastian Tschan
- * https://blueimp.net
- *
- * Licensed under the MIT license:
- * https://opensource.org/licenses/MIT
- */
 
 /* global define, require */
 
